@@ -67,6 +67,36 @@ console.log(y)
 
 
 
+////////////////////////////////////////
 
+const small = 1;
+const medium = 2;
+const large = 3;
+
+enum Size {
+  small = 1,
+  medium,
+  large
+}
+
+console.log(small);
+console.log(medium);
+console.log(large);
+
+/////////////////////////
+
+enum Letters {
+  small = "a",
+  medium = "b",
+  large = "c"
+}
+
+const myLetters : Letters = Letters.large;
+
+console.log(Letters);
+console.log(Letters.medium)
+console.log(myLetters);
+
+/////////////////////////
 
 

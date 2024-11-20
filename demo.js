@@ -53,7 +53,31 @@ var ar8 = ["a", "b"];
 var ar9 = ["c", "d"];
 var ar10 = __spreadArray(__spreadArray([], ar8, true), ar9, true);
 console.log(ar10);
-var ar12 = [1, "q"];
+var ar12 = [1, "q"]; //array as key values
 var x = ar12[0], y = ar12[1];
 console.log(x);
 console.log(y);
+////////////////////////////////////////
+var small = 1;
+var medium = 2;
+var large = 3;
+var Size;
+(function (Size) {
+    Size[Size["small"] = 1] = "small";
+    Size[Size["medium"] = 2] = "medium";
+    Size[Size["large"] = 3] = "large";
+})(Size || (Size = {}));
+console.log(small);
+console.log(medium);
+console.log(large);
+/////////////////////////
+var Letters;
+(function (Letters) {
+    Letters["small"] = "a";
+    Letters["medium"] = "b";
+    Letters["large"] = "c";
+})(Letters || (Letters = {}));
+var myLetters = Letters.large;
+console.log(Letters);
+console.log(Letters.medium);
+console.log(myLetters);

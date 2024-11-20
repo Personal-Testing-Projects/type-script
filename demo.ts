@@ -52,6 +52,19 @@ function printArray(ar : number[]) {
 printArray(ar2);
 //printArray(ar1);
 
+const ar8 = ["a","b"]
+const ar9 = ["c","d"]
+const ar10 = [...ar8, ...ar9]
+
+console.log(ar10);
+
+const ar12 : [number,string] = [1,"q"]; //array as key values
+let [x,y] = ar12;
+
+console.log(x)
+console.log(y)
+
+
 
 
 

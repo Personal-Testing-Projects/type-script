@@ -99,4 +99,23 @@ console.log(myLetters);
 
 /////////////////////////
 
+function add (n1 : number, n2 : number) : number {
+  return n1 + n2;
+} 
+
+add(1,2);
+console.log(add(1,2));
+
+function add2 (n1 : number, n2 : number) : never {
+  //return n1 + n2;
+  //cannot return a value from this method
+  console.log(n1+n2);
+} 
+
+add(1,2);
+console.log(add(1,2));
+add2(1,2);
+
+//////////////////////////////////////////////
+
 
